@@ -3,8 +3,11 @@
 
 def key_for_min_value(name_hash)
    if name_hash.length > 0
-     new_array = name_hash.max(name_hash.length)
-     new_array.reverse!
+
+     new_array = Array.new
+     new_array= name_hash.collect do |x, y|
+       y.max
+      end
      new_array[0]
    else
      nil
