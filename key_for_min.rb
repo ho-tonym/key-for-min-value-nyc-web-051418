@@ -3,8 +3,9 @@
 
 def key_for_min_value(name_hash)
    if name_hash.length > 0
-   name.each do |x, y|
-     x
+   new_array = name.collect do |x, y|
+     x<=>y
+     new_array[0]
    else
      nil
    end
