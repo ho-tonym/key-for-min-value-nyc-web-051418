@@ -4,7 +4,7 @@
 def key_for_min_value(name_hash)
    if name_hash.length > 0
      new_array = name_hash.max_by{|x,y| x }
-
+     new_array.reverse!
      new_array[0]
    else
      nil
